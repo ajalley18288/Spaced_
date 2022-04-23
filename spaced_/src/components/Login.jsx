@@ -3,9 +3,9 @@ import LoginImage from '../assets/loginpageimage.jpg'
 
 const Login = () => {
   return (
-      <div className='relative w-40 h-40 rounded-full overflow-hidden'>
+      <div className='w-full relative'>
+          <h1 className="w-full h-full flex flex-col left-0 absolute text-white text-9xl font-bold justify-start items-center">Spaced_</h1>
           <img src={LoginImage} className='object-cover w-full'/>
-          <h1 className="absolute w-full py-2.5 bottom-0 inset-x-0 bg-blue-400 text-white text-xs text-center leading-4">Spaced_</h1>
       </div>
   )
 }
