@@ -4,6 +4,8 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 // const dotenv = require('dotenv')
 
+const taskRoutes = require('./routes/task')
+
 const app = express()
 
 app.use(express.urlencoded({ extended: false }))
@@ -13,7 +15,7 @@ app.use(cors())
 
 // TODO
 // app.use(userRoutes)
-// app.use(taskRoutes)
+app.use(taskRoutes)
 
 const CONNECTION_URL = 'mongodb+srv://Massy1456:.Blackops11@spaced.i75y5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const PORT = 5000 
