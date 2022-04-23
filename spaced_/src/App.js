@@ -1,11 +1,15 @@
-import { LoginScreen } from "./pages/LoginScreen";
-
+import LoginScreen from "./pages/LoginScreen";
+import Navbar from './components/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
-      <LoginScreen/>
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<LoginScreen/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
