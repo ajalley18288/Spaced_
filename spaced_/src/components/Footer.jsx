@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>Created by</div>
                 <div className='font-thin'>Alyissa Sanders</div>
                 <div className='font-thin'>Massimiliano Celant</div>
-                <div className='font-thin'>Malcom Morton</div>
+                <div className='font-thin'>Malcolm Morton</div>
                 <div className='font-thin'>Estephania Santos</div>
             </div>
         </div>

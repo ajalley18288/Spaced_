@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 //all the svg files
 import Home from '../assets/home-solid.svg'
 import Calender from '../assets/sceduled.svg'
-import Projects from '../assets/starred.svg'
 import Documents from '../assets/draft.svg'
 import PowerOff from '../assets/power-off-solid.svg'
 
@@ -226,14 +225,14 @@ const [profileClick, setprofileClick] = useState(false);
                         <img src={Documents} alt="Documents" />
                         <Text clicked={click}>Mood Tracker</Text>
                     </Item>
-                    <Item
+                    {/* <Item
                         onClick={() => setClick(false)}
                         activeClassName="active"
                         to="/projects"
                         >
                         <img src={Projects} alt="Projects" />
                         <Text clicked={click}>Logout</Text>
-                    </Item>
+                    </Item> */}
                 </SlickBar>
 
 
