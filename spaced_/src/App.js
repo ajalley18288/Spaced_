@@ -10,6 +10,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<LoginScreen/>}/>
+        {/* <Route exact path='/todolist' element={<ToDoList/>}/> */}
         <Route exact path='/dashboard' element={<Dashboard/>} />
       </Routes>
       <Footer/>
