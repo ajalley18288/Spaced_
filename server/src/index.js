@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 // const dotenv = require('dotenv')
 
 const taskRoutes = require('./routes/task')
+const userRoutes = require('./routes/user')
 
 const app = express()
 
@@ -14,7 +15,7 @@ app.use(bodyParser.urlencoded({limit: "30mb", extended: false}))
 app.use(cors())
 
 // TODO
-// app.use(userRoutes)
+app.use(userRoutes)
 app.use(taskRoutes)
 
 const CONNECTION_URL = 'mongodb+srv://Massy1456:.Blackops11@spaced.i75y5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
