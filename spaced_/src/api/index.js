@@ -10,6 +10,8 @@ API.interceptors.request.use((req) => {
 })
 
 
-export const signIn = (userData) => API.post(`${url}/user/login`, userData)
-export const signUp = (userData) => API.post(`${url}/user/signup`, userData)
+export const signIn = (userData) => API.post(`/user/login`, userData)
+export const signUp = (userData) => API.post(`/user/signup`, userData)
+
+export const createTask = (data) => API.post(`/task`, data)
 
