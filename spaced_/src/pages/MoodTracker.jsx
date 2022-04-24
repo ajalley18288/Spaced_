@@ -1,7 +1,7 @@
 import React from 'react'
 import './MoodTracker.css'
 
-const Moodtracker = () => {
+const MoodTracker = () => {
     return (
 
        <body> 
@@ -12,4 +12,4 @@ const Moodtracker = () => {
 
     )
 }
-export default Moodtracker
+export default MoodTracker
