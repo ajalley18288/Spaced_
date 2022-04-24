@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { BiHappyBeaming } from 'react-icons/bi';
 import { BsFillCalendarCheckFill } from 'react-icons/bs';
 import { FaHome } from 'react-icons/fa';
+import { AiOutlineForm } from 'react-icons/ai';
 
 //all the svg files
 import PowerOff from '../assets/power-off-solid.svg'
@@ -45,7 +46,7 @@ const SlickBar = styled.ul`
   background-color: var(--black);
   padding: 1rem 0;
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   left: 0;
   width: ${(props) => (props.clicked ? "12rem" : "3.5rem")};
   transition: all 0.5s ease;
@@ -56,7 +57,7 @@ const Item = styled(NavLink)`
   text-decoration: none;
   color: var(--white);
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   cursor: pointer;
   display: flex;
   padding-left: 1rem;
@@ -80,7 +81,7 @@ const Profile = styled.div`
   width: ${(props) => (props.clicked ? "14rem" : "3rem")};
   height: 3rem;
   padding: 0.5rem 0rem;
-  /* border: 2px solid var(--white); */
+  border: 2px solid var(--white);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -218,6 +219,14 @@ const handleProfileClick = () => setprofileClick(!profileClick);
                         >
                         <BiHappyBeaming className='text-xl'/>
                         <Text clicked={click}>Mood Tracker</Text>
+                    </Item>
+                    <Item
+                      onClick={() => setClick(false)}
+                      activeClassName="active"
+                      to="/moodform"
+                      >
+                      <AiOutlineForm className='text-xl'/>
+                      <Text clicked={click}>Daily Mood</Text>
                     </Item>
                 </SlickBar>
 

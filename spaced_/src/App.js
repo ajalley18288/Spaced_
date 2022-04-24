@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dashboard from "./pages/Dashboard";
 import { ToDoList } from "./pages/ToDoList";
 import MoodTracker from "./pages/MoodTracker.jsx";
+import MoodForm from "./pages/MoodForm.jsx";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path='/todolist' element={<ToDoList/>}/>
         <Route exact path='/dashboard' element={<Dashboard/>} />
         <Route exact path='/moodtracker' element={<MoodTracker/>} />
+        <Route exact path='/moodform' element={<MoodForm/>} />
       </Routes>
     </BrowserRouter>
   );
