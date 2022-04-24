@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dashboard from "./pages/Dashboard";
+import Moodtracker from "./pages/MoodTracker";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route exact path='/' element={<LoginScreen/>}/>
         {/* <Route exact path='/todolist' element={<ToDoList/>}/> */}
         <Route exact path='/dashboard' element={<Dashboard/>} />
+        <Route exact path='/moodtracker' element={<Moodtracker/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>
