@@ -23,7 +23,7 @@ const Container = styled.div`
 const SidebarContainer = styled.div`
   background-color: var(--black);
   width: 3.5rem;
-  height: 80vh;
+  height: 65vh;
   margin-top: 1rem;
   border-radius: 0 30px 30px 0;
   padding: 1rem 0;
@@ -43,9 +43,9 @@ const SlickBar = styled.ul`
   flex-direction: column;
   align-items: center;
   background-color: var(--black);
-  padding: 2rem 0;
+  padding: 1rem 0;
   position: absolute;
-  top: 6rem;
+  top: 4rem;
   left: 0;
   width: ${(props) => (props.clicked ? "12rem" : "3.5rem")};
   transition: all 0.5s ease;
@@ -110,7 +110,7 @@ const Profile = styled.div`
 const Button = styled.button`
     background-color: var(--black);
     border: none;
-    width:2.5rem;
+    width: 2.5rem;
     height:2.5rem;
     border-radius: 50%;
     margin: 0.5rem 0 0 0.5rem;
@@ -190,7 +190,7 @@ const [click, setClick] = useState(false);
 const handleClick = () => setClick(!click);
 
 const [profileClick, setprofileClick] = useState(false);
-  const handleProfileClick = () => setprofileClick(!profileClick);
+const handleProfileClick = () => setprofileClick(!profileClick);
 
     return (
         <Container className='z-10'>
@@ -212,17 +212,17 @@ const [profileClick, setprofileClick] = useState(false);
                     <Item
                         onClick={() => setClick(false)}
                         activeClassName="active"
-                        to="/calender"
+                        to="/todolist"
                         >
-                        <img src={Calender} alt="Calender" />
+                        <img src={Calender} alt="To-Do List" />
                         <Text clicked={click}>To-Do List</Text>
                     </Item>
                     <Item
                         onClick={() => setClick(false)}
                         activeClassName="active"
-                        to="/documents"
+                        to="/moodtracker"
                         >
-                        <img src={Documents} alt="Documents" />
+                        <img src={Documents} alt="Mood Tracker" />
                         <Text clicked={click}>Mood Tracker</Text>
                     </Item>
                     {/* <Item
