@@ -2,14 +2,8 @@ import LoginScreen from "./pages/LoginScreen";
 import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dashboard from "./pages/Dashboard";
-<<<<<<< HEAD
-import { ToDoList } from "./pages/ToDoList";
-import MoodTracker from "./pages/MoodTracker.jsx";
-import MoodForm from "./pages/MoodForm.jsx";
-=======
 import ToDoList from "./pages/ToDoList";
 import MoodTracker from "./pages/MoodTracker";
->>>>>>> f2447235eb8da9b0a90f5e86ced0dbfca5aa969f
 
 const App = () => {
   return (
