@@ -29,7 +29,7 @@ const AuthContainer = () => {
 
     return (
         <div className='container mx-auto max-w-sm bg-blue-900/25 rounded-md border-zinc-200'>
-            <div className='text-2xl text-white font-bold text-center py-3'>{isUser ? 'LOGIN' : 'SIGN IN'}</div>
+            <div className='text-2xl text-white font-bold text-center py-3'>{isUser ? 'LOGIN' : 'SIGN UP'}</div>
             <div onClick={handleLoginChange} className='text-center text-white font-xs font-normal pb-3'>
                 <button className='btn btn-xs btn-ghost '>{ isUser ? 'Not a user yet? SIGN UP' : 'Already a user? SIGN IN'}</button>
             </div>

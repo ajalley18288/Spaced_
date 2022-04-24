@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dashboard from "./pages/Dashboard";
 import ToDoList from "./pages/ToDoList";
 import MoodTracker from "./pages/MoodTracker";
+import MoodForm from './pages/MoodForm'
 
 const App = () => {
   return (
