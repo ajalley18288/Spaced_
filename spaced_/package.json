@@ -11,6 +11,7 @@
     "create-react": "^0.0.0",
     "daisyui": "^2.14.2",
     "framer-motion": "^4.1.17",
+    "haml-jsx-loader": "^1.0.2",
     "jsonwebtoken": "^8.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
