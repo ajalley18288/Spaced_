@@ -2,11 +2,11 @@ import {BsFillSunFill} from 'react-icons/bs';
 import React, { useState } from 'react'
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { BiHappyBeaming } from 'react-icons/bi';
+import { BsFillCalendarCheckFill } from 'react-icons/bs';
+import { FaHome } from 'react-icons/fa';
 
 //all the svg files
-import Home from '../assets/home-solid.svg'
-import Calender from '../assets/sceduled.svg'
-import Documents from '../assets/draft.svg'
 import PowerOff from '../assets/power-off-solid.svg'
 
 const Container = styled.div`
@@ -56,7 +56,7 @@ const Item = styled(NavLink)`
   text-decoration: none;
   color: var(--white);
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 0;
   cursor: pointer;
   display: flex;
   padding-left: 1rem;
@@ -66,12 +66,6 @@ const Item = styled(NavLink)`
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
         brightness(103%) contrast(103%);
     }
-  }
-  img {
-    width: 1.2rem;
-    height: auto;
-    filter: invert(92%) sepia(4%) saturate(1033%) hue-rotate(169deg)
-      brightness(78%) contrast(85%);
   }
 `;
 
@@ -197,7 +191,7 @@ const handleProfileClick = () => setprofileClick(!profileClick);
             <Button clicked={click} onClick={() => handleClick()}>
             </Button>
             <SidebarContainer>
-                <BsFillSunFill/>
+                <BsFillSunFill className='text-xl'/>
                 
                 <SlickBar clicked={click}>
                     <Item
@@ -206,7 +200,7 @@ const handleProfileClick = () => setprofileClick(!profileClick);
                     activeClassName="active"
                     to="/dashboard"
                     >
-                    <img src={Home} alt="Home" />
+                    < FaHome className='text-xl' />
                     <Text clicked={click}>Home</Text>
                     </Item>
                     <Item
@@ -214,7 +208,7 @@ const handleProfileClick = () => setprofileClick(!profileClick);
                         activeClassName="active"
                         to="/todolist"
                         >
-                        <img src={Calender} alt="To-Do List" />
+                        <BsFillCalendarCheckFill className='text-xl'/>
                         <Text clicked={click}>To-Do List</Text>
                     </Item>
                     <Item
@@ -222,17 +216,9 @@ const handleProfileClick = () => setprofileClick(!profileClick);
                         activeClassName="active"
                         to="/moodtracker"
                         >
-                        <img src={Documents} alt="Mood Tracker" />
+                        <BiHappyBeaming className='text-xl'/>
                         <Text clicked={click}>Mood Tracker</Text>
                     </Item>
-                    {/* <Item
-                        onClick={() => setClick(false)}
-                        activeClassName="active"
-                        to="/projects"
-                        >
-                        <img src={Projects} alt="Projects" />
-                        <Text clicked={click}>Logout</Text>
-                    </Item> */}
                 </SlickBar>
 
 
