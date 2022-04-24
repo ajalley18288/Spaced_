@@ -7,8 +7,8 @@ const Footer = () => {
             <div className='text-2xl font-semibold text-right text-white pt-5 pr-10'>Spaced_Out</div>
             <div className='text-sm font-bold text-left pt-6'>
                 <div>Created by</div>
-                <div className='font-thin'>Alyissa Sanders</div>
                 <div className='font-thin'>Massimiliano Celant</div>
+                <div className='font-thin'>Alyissa Sanders</div>
                 <div className='font-thin'>Malcolm Morton</div>
                 <div className='font-thin'>Estephania Santos</div>
             </div>

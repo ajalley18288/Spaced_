@@ -1,6 +1,5 @@
 import LoginScreen from "./pages/LoginScreen";
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dashboard from "./pages/Dashboard";
 import { ToDoList } from "./pages/ToDoList";
@@ -16,7 +15,6 @@ const App = () => {
         <Route exact path='/dashboard' element={<Dashboard/>} />
         <Route exact path='/moodtracker' element={<MoodTracker/>} />
       </Routes>
-      <Footer/>
     </BrowserRouter>
   );
 };
