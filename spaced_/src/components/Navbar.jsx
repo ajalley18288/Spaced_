@@ -204,7 +204,7 @@ const [profileClick, setprofileClick] = useState(false);
                     onClick={() => setClick(false)}
                     exact
                     activeClassName="active"
-                    to="/"
+                    to="/dashboard"
                     >
                     <img src={Home} alt="Home" />
                     <Text clicked={click}>Home</Text>
