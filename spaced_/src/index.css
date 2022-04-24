@@ -16,10 +16,7 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--background);
 @font-face {
-    font-family: "aquire";
-    src: url("../src/font/AquireBold-8Ma60.otf");
-}
+    font-family: 'aquire';
+    src: url('../src/font/Aquire-BW0ox.otf')
 }
