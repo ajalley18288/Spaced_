@@ -1,3 +1,4 @@
+import {BsFillSunFill} from 'react-icons/bs';
 import React, { useState } from 'react'
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
@@ -204,46 +205,44 @@ const [profileClick, setprofileClick] = useState(false);
     return (
         <Container className='z-10'>
             <Button clicked={click} onClick={() => handleClick()}>
-                Click
             </Button>
             <SidebarContainer>
-                <Logo>
-                    <img src={logo} alt="logo" />
-                </Logo>
-                    <SlickBar clicked={click}>
+                <BsFillSunFill/>
+                
+                <SlickBar clicked={click}>
                     <Item
-                onClick={() => setClick(false)}
-                exact
-                activeClassName="active"
-                to="/"
-            >
-                <img src={Home} alt="Home" />
-                <Text clicked={click}>Home</Text>
-            </Item>
-            <Item
-                onClick={() => setClick(false)}
-                activeClassName="active"
-                to="/calender"
-            >
-                <img src={Calender} alt="Calender" />
-                <Text clicked={click}>Calender</Text>
-            </Item>
-            <Item
-                onClick={() => setClick(false)}
-                activeClassName="active"
-                to="/documents"
-            >
-                <img src={Documents} alt="Documents" />
-                <Text clicked={click}>Documents</Text>
-            </Item>
-            <Item
-                onClick={() => setClick(false)}
-                activeClassName="active"
-                to="/projects"
-            >
-                <img src={Projects} alt="Projects" />
-                <Text clicked={click}>Projects</Text>
-            </Item>
+                    onClick={() => setClick(false)}
+                    exact
+                    activeClassName="active"
+                    to="/"
+                    >
+                    <img src={Home} alt="Home" />
+                    <Text clicked={click}>Home</Text>
+                    </Item>
+                    <Item
+                        onClick={() => setClick(false)}
+                        activeClassName="active"
+                        to="/calender"
+                        >
+                        <img src={Calender} alt="Calender" />
+                        <Text clicked={click}>Calender</Text>
+                    </Item>
+                    <Item
+                        onClick={() => setClick(false)}
+                        activeClassName="active"
+                        to="/documents"
+                        >
+                        <img src={Documents} alt="Documents" />
+                        <Text clicked={click}>Documents</Text>
+                    </Item>
+                    <Item
+                        onClick={() => setClick(false)}
+                        activeClassName="active"
+                        to="/projects"
+                        >
+                        <img src={Projects} alt="Projects" />
+                        <Text clicked={click}>Projects</Text>
+                    </Item>
                 </SlickBar>
 
 
