@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 //all the svg files
-import logo from '../assets/logo.svg'
 import Home from '../assets/home-solid.svg'
 import Calender from '../assets/sceduled.svg'
 import Projects from '../assets/starred.svg'
@@ -82,14 +81,6 @@ const Text = styled.span`
   overflow: hidden;
   margin-left: ${(props) => (props.clicked ? "1.5rem" : "0")};
   transition: all 0.3s ease;
-`;
-
-const Logo = styled.div`
-  width: 2rem;
-  img {
-    width: 100%;
-    height: auto;
-  }
 `;
 
 const Profile = styled.div`
@@ -225,7 +216,7 @@ const [profileClick, setprofileClick] = useState(false);
                         to="/calender"
                         >
                         <img src={Calender} alt="Calender" />
-                        <Text clicked={click}>Calender</Text>
+                        <Text clicked={click}>To-Do List</Text>
                     </Item>
                     <Item
                         onClick={() => setClick(false)}
@@ -233,7 +224,7 @@ const [profileClick, setprofileClick] = useState(false);
                         to="/documents"
                         >
                         <img src={Documents} alt="Documents" />
-                        <Text clicked={click}>Documents</Text>
+                        <Text clicked={click}>Mood Tracker</Text>
                     </Item>
                     <Item
                         onClick={() => setClick(false)}
@@ -241,7 +232,7 @@ const [profileClick, setprofileClick] = useState(false);
                         to="/projects"
                         >
                         <img src={Projects} alt="Projects" />
-                        <Text clicked={click}>Projects</Text>
+                        <Text clicked={click}>Logout</Text>
                     </Item>
                 </SlickBar>
 
