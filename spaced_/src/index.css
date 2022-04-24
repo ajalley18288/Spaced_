@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --black: black;
+    --grey: #a4b2bc;
+    --white: #fff;
+    --background:rgba(137,171,245,0.37);
+}
+
+/*Basic Styling*/
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 @font-face {
-    font-family: "aquire";
-    src: url("../src/font/AquireBold-8Ma60.otf");
+    font-family: 'aquire';
+    src: url('../src/font/Aquire-BW0ox.otf')
 }
