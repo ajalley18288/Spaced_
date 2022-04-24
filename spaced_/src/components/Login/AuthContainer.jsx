@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const initialState = {
     name:'',
@@ -8,6 +9,8 @@ const initialState = {
 }
 
 const AuthContainer = () => {
+
+    const navigate = useNavigate()
 
     const [isUser, setIsUser] = useState(false)
     const [userData, setUserData] = useState(initialState)
@@ -21,7 +24,7 @@ const AuthContainer = () => {
     }
 
     const handleSubmit = () => {
-        // handle the user login / registration
+        navigate('/dashboard')
     }
 
     return (
